@@ -5,7 +5,7 @@ import "programs/programs"
 /* Go Program */
 
 func main() {
-	programs.HelloWorld()
-	programs.Variables()
-
+	// programs.HelloWorld()
+	// programs.Variables()
+	programs.Constants()
 }
