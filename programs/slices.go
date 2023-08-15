@@ -22,4 +22,11 @@ func Slices() {
 	fmt.Println(positions, len(positions), cap(positions))
 	rank := make([]int, 5)
 	fmt.Println(rank, len(rank), cap(rank))
+
+	// Modify
+	positions[0] = 10
+	positions[1] = 20
+	positions[2] = 30
+	fmt.Println(positions[2])
+	fmt.Println(positions)
 }
