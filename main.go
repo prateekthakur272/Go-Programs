@@ -7,5 +7,7 @@ import "programs/programs"
 func main() {
 	// programs.HelloWorld()
 	// programs.Variables()
-	programs.Constants()
+	// programs.Constants()
+	// programs.Print()
+	programs.Formatting()
 }
