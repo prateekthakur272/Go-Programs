@@ -1,6 +1,8 @@
 package programs
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Slices() {
 	// Slices
@@ -29,4 +31,23 @@ func Slices() {
 	positions[2] = 30
 	fmt.Println(positions[2])
 	fmt.Println(positions)
+
+	// Append
+	positions = append(positions, 7)
+	fmt.Println(positions)
+	fmt.Println(append(positions, num_slice...))
+
+	array := [8]int{1, 2, 3, 4, 5, 6, 7, 8}
+	slice := array[4:7]
+	fmt.Println(slice, len(slice), cap(slice))
+
+	// Copy
+	large := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+	fmt.Println(large, len(large), cap(large))
+	small := large[5:10]
+	fmt.Println(small, len(small), cap(small))
+	small_array := make([]int, len(small))
+	fmt.Println(small_array, len(small_array), cap(small_array))
+	copy(small_array, small)
+	fmt.Println(small_array, len(small_array), cap(small_array))
 }
