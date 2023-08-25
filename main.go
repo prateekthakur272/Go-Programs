@@ -13,5 +13,7 @@ func main() {
 	// programs.HelloWorld()
 	// programs.Arrays()
 	// programs.Slices()
-	programs.Operators()
+	// programs.Operators()
+	// programs.Conditions()
+	programs.Switch()
 }
