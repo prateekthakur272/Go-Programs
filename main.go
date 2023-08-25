@@ -16,5 +16,6 @@ func main() {
 	// programs.Operators()
 	// programs.Conditions()
 	// programs.Switch()
-	programs.Loops()
+	// programs.Loops()
+	programs.Functions()
 }
